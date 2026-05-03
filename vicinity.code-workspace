@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/node_modules": false,
+			"**/.git": false
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/build": true
+		},
+		"editor.formatOnSave": true,
+		"javascript.preferences.quoteStyle": "single",
+		"typescript.preferences.quoteStyle": "single"
+	},
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"ms-vscode.vscode-typescript-next"
+		]
+	}
+}

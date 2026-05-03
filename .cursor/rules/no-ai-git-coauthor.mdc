@@ -1,0 +1,11 @@
+---
+description: Neutral commit messages — no automated co-author trailers for GitHub.
+alwaysApply: true
+---
+
+# Git commits and GitHub contributors
+
+- **Never** add `Co-authored-by:` or similar trailers that attribute commits to tools, bots, or assistants.
+- **Never** suggest `git commit --no-verify` to bypass `.githooks` unless the user explicitly requests a one-off exception.
+- Keep commit messages concise and about **Vicinity** only — no footer credits to tools.
+- Keep `core.hooksPath` set to `.githooks` when suggesting git setup.

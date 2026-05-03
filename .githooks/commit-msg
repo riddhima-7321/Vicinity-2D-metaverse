@@ -1,0 +1,12 @@
+#!/bin/sh
+# Drop Co-authored-by lines (GitHub counts those as contributors).
+msg_file="$1"
+[ -n "$msg_file" ] && [ -f "$msg_file" ] || exit 0
+tmp="${msg_file}.$$"
+if command -v perl >/dev/null 2>&1; then
+  perl -ne 'print unless /^co-authored-by:/i' "$msg_file" >"$tmp"
+else
+  grep -vi '^co-authored-by:' "$msg_file" >"$tmp" || true
+fi
+mv "$tmp" "$msg_file"
+exit 0
