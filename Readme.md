@@ -1,92 +1,86 @@
-# Vicinity
+# 🚀 Vicinity
 
-Multiplayer video chat in a simple 2D space. Move around with the keyboard; video appears when you are near other people. Built with React, Node, Socket.io, and WebRTC.
+**Vicinity** is a real-time multiplayer video chat application built within a lightweight 2D virtual environment.  
+Users navigate a shared space where video communication is triggered automatically based on proximity.
 
-## What you need
+Built using **React, Node.js, Socket.io, and WebRTC**.
 
-- Node.js (v14 or newer)
-- npm
+---
 
-## Install
+## ✨ Features
 
-From the project root (the **Vicinity** folder):
+- 🎮 Real-time avatar movement (WASD / Arrow keys)  
+- 📹 Proximity-based video communication  
+- 🎤 Audio, camera, and screen sharing support  
+- 💬 Integrated real-time chat system  
+- 🌐 Room-based multiplayer architecture  
+
+---
+
+## 📸 Screenshots
+
+### 🔐 Room Join
+![Login Screen](./screenshots/room_login.jpeg)
+
+---
+
+### 👤 Single Player View
+![Single Player](./screenshots/one_player.jpeg)
+
+---
+
+### 👥 Two Players Interaction
+![Two Players](./screenshots/2_player.jpeg)
+
+---
+
+## ⚙️ Installation
+
+Install dependencies for both server and client:
 
 ```bash
 cd server && npm install
 cd client && npm install
 ```
 
-## Run
+## ▶️ Run
 
-**Production (single port, recommended for sharing):**
-
+### Production
 ```bash
 cd server/client
 NODE_OPTIONS=--openssl-legacy-provider npm run build
 cd ..
 NODE_ENV=production node server.js
 ```
+Open: http://localhost:3001
 
-Open **http://localhost:3001**
+## 🛠️  Development
 
-**Development (hot reload for the UI):**
-
-Terminal 1:
-
+# Terminal 1
 ```bash
 cd server && node server.js
 ```
 
-Terminal 2:
-
+# Terminal 2
 ```bash
 cd server/client && npm start
 ```
 
-Open **http://localhost:3000**
+Open: http://localhost:3001
 
-## Using the app
-
-1. Create a room or join with a room ID someone shares with you.
-2. Move with **WASD** or arrow keys.
-3. Walk close to others to see their video. Use on-screen controls for mic, camera, and screen share.
-4. Use the chat panel for text messages.
-
-## Playing with others on a network
-
-See **[SETUP.md](./SETUP.md)** for LAN access, tunnels (e.g. ngrok), and deployment notes.
-
-To try **two players on your own laptop**, see **[TEST_LOCALLY.md](./TEST_LOCALLY.md)**.
-
-## Config (optional)
-
-Create `server/config.env` if you want to change the port or environment:
-
-```env
-PORT=3001
-NODE_ENV=production
-```
-
-## Git and GitHub identity
-
-Contributors on GitHub come from **commit authors** plus anyone listed on a **`Co-authored-by:`** line in the commit message.
-
-This repo ships **`.githooks/prepare-commit-msg`** and **`.githooks/commit-msg`** so **`Co-authored-by:` lines are removed** before each commit completes (otherwise GitHub counts extra “contributors”).
-
-**One-time setup (after clone):**
-
+## 🎮 Usage
 ```bash
-git config core.hooksPath .githooks
-chmod +x .githooks/prepare-commit-msg .githooks/commit-msg
+1. Create or join a room using a Room ID  
+2. Move using **WASD** or **Arrow keys**  
+3. Approach other users to automatically start video  
+4. Use on-screen controls for mic, camera, and chat  
 ```
 
-Do not use **`git commit --no-verify`** for normal work; it skips these hooks.
-
-Optional project rule files under **`.cursor/rules/`** help keep commit messages free of automated co-author lines.
-
-Use your GitHub email (from **Settings → Emails**) so commits attach to your profile:
-
-```bash
-git config user.email "YOUR_EMAIL_HERE"
-git config user.name "abhinav"
+##📁 Structure
 ```
+Vicinity/
+├── server/
+│   ├── client/
+│   └── server.js
+├── screenshots/
+└── README.md
