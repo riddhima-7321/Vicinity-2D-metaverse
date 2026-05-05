@@ -1,4 +1,4 @@
-# 🚀 Vicinity
+#  Vicinity
 
 **Vicinity** is a real-time multiplayer video chat application built within a lightweight 2D virtual environment.  
 Users navigate a shared space where video communication is triggered automatically based on proximity.
@@ -7,34 +7,34 @@ Built using **React, Node.js, Socket.io, and WebRTC**.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🎮 Real-time avatar movement (WASD / Arrow keys)  
-- 📹 Proximity-based video communication  
-- 🎤 Audio, camera, and screen sharing support  
-- 💬 Integrated real-time chat system  
-- 🌐 Room-based multiplayer architecture  
+-  Real-time avatar movement (WASD / Arrow keys)  
+-  Proximity-based video communication  
+-  Audio, camera, and screen sharing support  
+-  Integrated real-time chat system  
+-  Room-based multiplayer architecture  
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🔐 Room Join
+###  Room Join
 ![Login Screen](./screenshots/room_login.jpeg)
 
 ---
 
-### 👤 Single Player View
+###  Single Player View
 ![Single Player](./screenshots/one_player.jpeg)
 
 ---
 
-### 👥 Two Players Interaction
+###  Two Players Interaction
 ![Two Players](./screenshots/2_player.jpeg)
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 Install dependencies for both server and client:
 
@@ -43,7 +43,7 @@ cd server && npm install
 cd client && npm install
 ```
 
-## ▶️ Run
+##  Run
 
 ### Production
 ```bash
@@ -54,7 +54,7 @@ NODE_ENV=production node server.js
 ```
 Open: http://localhost:3001
 
-## 🛠️  Development
+##   Development
 
 # Terminal 1
 ```bash
@@ -68,7 +68,7 @@ cd server/client && npm start
 
 Open: http://localhost:3001
 
-## 🎮 Usage
+##  Usage
 ```bash
 1. Create or join a room using a Room ID  
 2. Move using **WASD** or **Arrow keys**  
@@ -76,7 +76,7 @@ Open: http://localhost:3001
 4. Use on-screen controls for mic, camera, and chat  
 ```
 
-##📁 Structure
+## Structure
 ```
 Vicinity/
 ├── server/
